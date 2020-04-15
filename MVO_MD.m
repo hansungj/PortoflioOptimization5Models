@@ -51,9 +51,5 @@ function  x_optimal = MVO_MD(mu, Q, rho, targetRet, k)
     Aeq = ones(1,n);
     x_optimal = quadprog(Q,[],(-mu.*y).',-targetRet,Aeq,1);
     
-    
 
-
-    %----------------------------------------------------------------------
-    
 end
